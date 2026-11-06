@@ -1,0 +1,523 @@
+
+/* =====================================
+   1. CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66536b;
+    background: #fff5fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 40px;
+}
+
+
+/* =====================================
+   2. CABEÇALHO E MENU
+===================================== */
+
+header {
+    background: #f8e5f0;
+    padding: 22px 0;
+    border-bottom: 2px solid #e5c4df;
+    box-shadow: 0 4px 15px #a77b9c22;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+header nav ul li a {
+    color: #79517e;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #c17bb0;
+}
+
+
+/* =====================================
+   3. TÍTULOS
+===================================== */
+
+h1 {
+    color: #9865a5;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    color: #9865a5;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #edcce3;
+}
+
+h3 {
+    color: #a66eaa;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   4. TEXTOS
+===================================== */
+
+section p {
+    color: #66536b;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+
+/* =====================================
+   5. QUADROS DAS SEÇÕES
+===================================== */
+
+section {
+    padding: 25px 0;
+}
+
+section .container {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #fbedf6
+    );
+
+    border: 1px solid #ead0e5;
+    border-radius: 24px;
+
+    box-shadow:
+        0 6px 20px rgba(157, 103, 153, 0.10);
+
+    transition: 0.3s ease;
+}
+
+section .container:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(157, 103, 153, 0.15);
+
+    border-color: #d3a7d5;
+}
+
+
+/* =====================================
+   6. APRESENTAÇÃO INICIAL
+===================================== */
+
+#hero {
+    padding: 55px 0;
+    background: linear-gradient(
+        135deg,
+        #f9e5f1,
+        #f1e5fa,
+        #fff5fa
+    );
+}
+
+#hero .hero-card {
+    text-align: center;
+    background: #fffaff;
+    border: 1px solid #e8c9e3;
+    border-radius: 25px;
+}
+
+#hero p {
+    text-align: center;
+    color: #795d80;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   7. FOTO DE PERFIL
+===================================== */
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+    border: 5px solid #e7bfdc;
+
+    object-fit: cover;
+    object-position: center 10%;
+
+    display: block;
+    margin: 0 auto 30px;
+
+    box-shadow:
+        0 0 20px rgba(194, 139, 183, 0.30);
+
+    transition: 0.4s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+    border-color: #bd8bc1;
+}
+
+
+/* =====================================
+   8. QUADROS DE HABILIDADES
+===================================== */
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.habilidade-card {
+    background: linear-gradient(
+        135deg,
+        #fff8fc,
+        #f5eafa
+    );
+
+    border: 1px solid #ead0e5;
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 4px 12px rgba(157, 103, 153, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px);
+    border-color: #c99ad9;
+
+    box-shadow:
+        0 8px 18px rgba(157, 103, 153, 0.15);
+}
+
+.habilidade-card h3 {
+    border-bottom: 1px solid #e8c9e3;
+    padding-bottom: 10px;
+}
+
+.habilidade-card p {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   9. QUADRO DE PROJETOS
+===================================== */
+
+.projeto-card {
+    background: #fff8fc;
+    border: 1px solid #e8c9e3;
+    border-radius: 18px;
+    padding: 25px;
+
+    transition: 0.3s ease;
+}
+
+.projeto-card:hover {
+    background: #f8eaf7;
+    transform: translateY(-3px);
+}
+
+.projeto-card p {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   10. BOTÕES
+===================================== */
+
+.botao,
+button[type="submit"] {
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #c98ebd,
+        #9d70b3
+    );
+
+    color: white;
+
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 15px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.botao:hover,
+button[type="submit"]:hover {
+    background: #815b9a;
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 5px 15px #a77bb755;
+}
+
+
+/* =====================================
+   11. FORMULÁRIO DE CONTATO
+===================================== */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form label {
+    color: #79517e;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#form input,
+#form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #e5c4df;
+    border-radius: 12px;
+
+    background: #fffaff;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+
+    color: #66536b;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+#form input:focus,
+#form textarea:focus {
+    border-color: #b88ac4;
+
+    box-shadow:
+        0 0 8px #c99ad955;
+}
+
+#form textarea {
+    resize: vertical;
+}
+
+#form button {
+    align-self: flex-start;
+}
+
+
+/* =====================================
+   12. RODAPÉ
+===================================== */
+
+footer {
+    background: #ead8eb;
+    color: #79517e;
+
+    text-align: center;
+    padding: 30px 20px;
+
+    border-top: 2px solid #d4afd2;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =====================================
+   13. RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 700px) {
+
+    header nav ul {
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    section {
+        padding: 18px 0;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+/* =====================================
+   14. FUNDO FLORAL DELICADO
+===================================== */
+
+body {
+    background-color: #fff5fa;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23a77bb8' opacity='.16'%3E%3Cellipse cx='90' cy='65' rx='11' ry='22'/%3E%3Cellipse cx='90' cy='109' rx='11' ry='22'/%3E%3Cellipse cx='68' cy='87' rx='22' ry='11'/%3E%3Cellipse cx='112' cy='87' rx='22' ry='11'/%3E%3Cellipse cx='75' cy='72' rx='11' ry='21' transform='rotate(-45 75 72)'/%3E%3Cellipse cx='105' cy='102' rx='11' ry='21' transform='rotate(-45 105 102)'/%3E%3C/g%3E%3Ccircle cx='90' cy='87' r='9' fill='%23c69acb' opacity='.28'/%3E%3C/svg%3E");
+
+    background-repeat: repeat;
+    background-size: 180px 180px;
+}
+
+
+/* =====================================
+   15. BORDAS MAIS GROSSINHAS
+===================================== */
+
+/* Quadros principais */
+
+section .container {
+    border: 2px solid #e2bfdf;
+    border-radius: 25px;
+}
+
+/* Quadros das habilidades */
+
+.habilidade-card {
+    border: 2px solid #ead0e8;
+    border-radius: 20px;
+}
+
+/* Quadro dos projetos */
+
+.projeto-card {
+    border: 2px solid #ead0e8;
+    border-radius: 20px;
+}
+
+/* Foto de perfil */
+
+.foto-perfil {
+    border: 6px solid #dfb9dc;
+}
+
+/* Campos do formulário */
+
+#form input,
+#form textarea {
+    border: 2px solid #ead0e8;
+    border-radius: 14px;
+}
+
+/* Menu */
+
+header {
+    border-bottom: 3px solid #d8b2d8;
+}
+
+/* Rodapé */
+
+footer {
+    border-top: 3px solid #d8b2d8;
+}
+
+/* BORDAS MAIS GROSSAS NOS TÓPICOS */
+
+section .container {
+    border: 3px solid #d6add8;
+    border-radius: 25px;
+}
+
+.habilidade-card {
+    border: 2.5px solid #d9b6df;
+    border-radius: 20px;
+}
+
+.projeto-card {
+    border: 2.5px solid #d9b6df;
+    border-radius: 20px;
+}
+
+/* Destaque suave ao passar o mouse */
+
+section .container:hover,
+.habilidade-card:hover,
+.projeto-card:hover {
+    border-color: #b98ac5;
+    box-shadow: 0 8px 22px rgba(153, 105, 170, 0.18);
+}
